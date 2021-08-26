@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+}
+
+body > a:first-child:hover {
+    color: lightblue;
+    font-weight: bold;
+}
+
+body > a:nth-child(2):active {
+    color: red;
+    font-style: italic
+}
+
+/* visited doesnt work anymore 
+because of security issues?*/
+body > a:last-child:visited {
+    color: yellow;
+}
+
+input:focus {
+    size: 20px;
+    color: green;
+    border: 2px solid aqua;
+}
+
+nav > ul.horizontal {
+    display: flex;
+    flex-direction: row;    
+    gap: 20px;
+    background-color: blue;
+    list-style: none;    
+}
+
+li a:hover:not(.currentPage) {
+    background-color: lightblue;
+}
+
+.currentPage {
+    background-color: rgb(79, 94, 121);
+}
+
+li > input:focus {
+    border: 2px solid aqua;
+}
+
